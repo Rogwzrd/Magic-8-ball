@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--css styling-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>Magic 8 ball</title>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron text-center panel-opacity">
+        <h1>Coding Hangouts Magic 8 ball</h1>
+    </div>
+    <div class="row">
+        <!--8 ball-->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div id="eight-ball-space">
+                <img id="eight-ball" class="img-responsive" src="assets/images/m8-ball.gif">
+                <div id="answer" class="iniatalOpacity">
+                    <img id="triangle" src="assets/images/triangle.png">
+                    <div id="answer-text">
+                        <p>your fortune here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--user questions stored here-->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card panel-opacity">
+                <div class="card-header">
+                    <h5>Your Fortunes</h5>
+                </div>
+                <div class="card-body">
+                    <div id="display">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--user input space-->
+    <div class="row">
+        <div class="col-12">
+            <div class="card panel-opacity">
+                <div class="card-header">
+                    <h5>What would you like to know?</h5>
+                </div>
+                <div class="card-body">
+                    <form id="user-input">
+                        <div class="form-group">
+                            <input id="questionInput" type="text" placeholder="insert question here" class="form-control" value="my question is...">
+                        </div>
+                        <button id="submitButton" class="btn btn-primary">shake 8 ball</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./assets/js/app.js"></script>
+</html>

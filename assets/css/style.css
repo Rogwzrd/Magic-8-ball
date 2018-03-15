@@ -1,0 +1,107 @@
+body{
+    background-image: url("../images/bg-image.jpg");
+    background-size: cover;
+}
+
+/* give the panels tron a light opacity */
+.panel-opacity{
+    opacity: .8;
+}
+/* assign relative poition for child elements to reference*/
+#eight-ball-space{
+    position: relative;
+}
+/* responsive sizing for 8 ball image */
+#eight-ball {
+    width: 100%;
+    height: 100%;
+}
+
+/* center elements and give responsive sizing */
+#answer, #triangle, #answer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+
+#answer-text{
+    display: flex;
+}
+
+#answer-text p{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+.iniatalOpacity{
+    opacity: 0;
+}
+
+.fadeIn {
+     animation: fadeIn ease 200ms
+ }
+
+.fadeOut {
+    animation: fadeOut ease 200ms
+}
+
+/* animation */
+@-moz-keyframes fadeOut{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeIn{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
