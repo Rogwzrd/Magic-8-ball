@@ -14,7 +14,6 @@ $(document).on('click', "#submitButton", function (e) {
     var yourFortune = fortunes[Math.floor(Math.random()* fortunes.length)];
 
     eightBallText.text(yourFortune);
-    $('#answer').classList.add('.fadeIn');
 
     var foturneRow = $('<p>').text(`Question: ${userinput} Fortune: ${yourFortune}`);
 
